@@ -2,7 +2,7 @@
 *Using scanner for triangle sides input and math. to calculate for
 *perimeter, area and possibly angles
 *debug needed without making loops.(challenging).
-/*
+*/
 
 import java.util.Scanner;	// Scanner is an java utility that scans for user keyboard input.
 
@@ -36,6 +36,6 @@ public class CodeChallengeTriangle {
 	/**	this should look fine up to this point.
 	*inserting module after main and before printout.
 	*Then add corresponding print for new module.
-	/*
+	*/
 }
 
