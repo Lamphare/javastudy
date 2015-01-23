@@ -1,0 +1,12 @@
+import java.util.Scanner;	// Scanner is an java utility that scans for user keyboard input.
+
+public class CodeChallengeTriangle {
+
+	public static void main(String[] args){
+	
+	Scanner stdin = new Scanner( System.in ); //Open the resource for later input.
+	
+	
+	}
+}
+
