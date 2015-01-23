@@ -3,10 +3,17 @@ import java.util.Scanner;	// Scanner is an java utility that scans for user keyb
 public class CodeChallengeTriangle {
 
 	public static void main(String[] args){
+	double a;
+	double b;
+	double c;	//
 	
 	Scanner stdin = new Scanner( System.in ); //Open the resource for later input.
 	
+	System.out.print("Give me the first side for your triangle
+	
 	
 	}
+	
+	public static double TrianglularArea(
 }
 
