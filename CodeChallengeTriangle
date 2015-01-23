@@ -23,10 +23,10 @@ public class CodeChallengeTriangle {
 	c = stdin.nextDouble();
 	}
 	
-	public static double TrianglularPSA( double a, double b, double c ){ \\Modularization. including perimeter area semiperimeter
-	double p = (a + b + c);		\\perimeter
-	double s = (a + b + c)/2;	\\semi-perimeter
-	double A = Math.sqrt ( s * ( s - a ) * ( s - b ) * ( s - c));	\\Area
+	public static double TrianglularPSA( double a, double b, double c ){ //Modularization. including perimeter area semiperimeter
+	double p = (a + b + c);		//perimeter
+	double s = (a + b + c)/2;	//semi-perimeter
+	double A = Math.sqrt ( s * ( s - a ) * ( s - b ) * ( s - c));	//Area
 	
 	}
 	
