@@ -1,3 +1,9 @@
+/**
+*Using scanner for triangle sides input and math. to calculate for
+*perimeter, area and possibly angles
+*debug needed without making loops.(challenging).
+/*
+
 import java.util.Scanner;	// Scanner is an java utility that scans for user keyboard input.
 
 public class CodeChallengeTriangle {
@@ -5,13 +11,14 @@ public class CodeChallengeTriangle {
 	public static void main(String[] args){
 	double a;
 	double b;
-	double c;	//
+	double c;	//Three sides
 	
 	Scanner stdin = new Scanner( System.in ); //Open the resource for later input.
 	
-	System.out.print("Give me the first side for your triangle
-	
-	
+	System.out.println("Give me the first side for your triangle.");
+	a = stdin.nextDouble();		//It only accept double as input. 
+	System.out.println("Give me the second side for your triangle.");		//currently anything else 
+	b = stdin.nextDouble();		//e.g. characters would screw the program up.
 	}
 	
 	public static double TrianglularArea(
