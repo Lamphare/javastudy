@@ -23,12 +23,12 @@ public class CodeChallengeTriangle {
 	double s = (a + b + c)/2;	//semi-perimeter
 	double X = Math.sqrt ( s * ( s - a ) * ( s - b ) * ( s - c));	//Area
 	
-	double angleA = Math.acos(( b * b + c * c - a * a ) / (2.0 * b * c )) * (180.0 / Math.PI);	
-	double angleB = Math.acos(( a * a + c * c - b * b ) / (2.0 * a * c )) * (180.0 / Math.PI); 	
+	double angleA = Math.acos(( b * b + c * c - a * a ) / (2.0 * b * c )) * (180.0 / Math.PI);	//law of cosine
+	double angleB = Math.acos(( a * a + c * c - b * b ) / (2.0 * a * c )) * (180.0 / Math.PI); 	//conversion from default radian to degrees
 	double angleC = Math.acos(( a * a + b * b - c * c ) / (2.0 * a * b )) * (180.0 / Math.PI); 
 	
 	System.out.println();
-	System.out.printf("The Perimeter of your triangle is  %1.2f, and the area is %1.2f",p ,X );
+	System.out.printf("The Perimeter of your triangle is  %1.2f, and the area is %1.2f",p ,X );	//converting to flaot with 2 decimal places.
 	System.out.println();
 	System.out.println();
 	System.out.println("The interior angles oposite and respective to the sides a, b, and c, are ");
@@ -36,8 +36,4 @@ public class CodeChallengeTriangle {
 	System.out.printf( " %1.2f°, %1.2f°, %1.2f°", angleA , angleB, angleC );
 	
 	}
-	/**	this should look fine up to this point.
-	*inserting module after asking sides and before printout.
-	*Then add corresponding print for new module.
-	*/
 }
