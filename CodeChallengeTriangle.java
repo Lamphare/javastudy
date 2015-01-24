@@ -6,7 +6,7 @@
 
 import java.util.Scanner;	// Scanner is an java utility that scans for user keyboard input.
 
-public class CodeChallengeTriangle1 {
+public class CodeChallengeTriangle {
 
 	public static void main(String[] args){
 	
