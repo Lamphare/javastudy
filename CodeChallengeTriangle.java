@@ -2,7 +2,7 @@
 *Using scanner for triangle sides input and math. to calculate for
 *perimeter, area and possibly angles
 *debug needed without making loops.(challenging).
-* Coded By [Reagan you put your preferred name here] and Yiran Guo
+* Coded By Reagan Stovall and Yiran Guo
 */
 
 import java.util.Scanner;	// Scanner is an java utility that scans for user keyboard input.
