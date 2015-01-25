@@ -35,5 +35,5 @@ public class CodeChallengeTriangle {
 	System.out.println();
 	System.out.printf( " %1.2f°, %1.2f°, %1.2f°", angleA , angleB, angleC );
 	
-	}
-}
+	}	//end of main.
+}	//end of class.
