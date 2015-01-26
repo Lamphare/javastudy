@@ -3,14 +3,9 @@
 *and convert it into corresponding polar coordinates
 * Coded By Reagan Stovall and Yiran Guo
 */
-import java.util.Scanner;	// Scanner is a java utility that scans for user keyboard input.
-
 public class CodeChallengeCartesianToPolar {
 
 	public static void main(String[] args) {
-
-		Scanner stdin = new Scanner( System.in ); //Open the resource for later input.
-	
 		//get and define X and Y//
 		boolean again;	//Loop value
 		double X;		//X value
@@ -26,9 +21,9 @@ public class CodeChallengeCartesianToPolar {
 	
 	do {
 		System.out.println("what is your X value?");
-			X = stdin.nextDouble();	
+			X = TextIO.getlnDouble();
 		System.out.println("what is your Y value?");
-			Y = stdin.nextDouble();	
+			Y = TextIO.getlnDouble();
 		
 		//defining the variables
 			
@@ -38,35 +33,47 @@ public class CodeChallengeCartesianToPolar {
 		angle3 = Math.atan( Y / X ) * (180 / Math.PI) + 360;	//angle if y is negative.
 		
 		if ( X > 0 && Y >= 0 ){
-			System.out.println("The angle is " + angle1 );
-			System.out.println("The distance from the origin is " + r );
+			System.out.println();
+			System.out.printf("The angle is %1.2f°" ,angle1 );
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );
 		}	
 		else if ( X < 0 && Y >= 0 ){
-			System.out.println("The angle is " + angle2 );
-			System.out.println("The distance from the origin is " + r );			
+			System.out.println();
+			System.out.printf("The angle is %1.2f°" ,angle2 );
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );		
 		}	
 		else if ( X < 0 && Y < 0 ){
-			System.out.println("The angle is " + angle2 );
-			System.out.println("The distance from the origin is " + r );			
+			System.out.println();
+			System.out.printf("The angle is %1.2f°" ,angle2 );
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );		
 		}	
 		else if ( X > 0 && Y < 0 ){
-			System.out.println("The angle is " + angle3 );
-			System.out.println("The distance from the origin is " + r );
+			System.out.println();
+			System.out.printf("The angle is %1.2f°" ,angle3 );
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );
 		}
 		else if ( X == 0 && Y > 0 ){
-			System.out.println("The angle is 90");
-			System.out.println("The distance from the origin is " + r );			
+			System.out.println("The angle is 90°");
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );		
 		}
 		else if ( X == 0 && Y < 0 ){
-			System.out.println("The angle is 270");
-			System.out.println("The distance from the origin is " + r );
+			System.out.println("The angle is 270°");
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );
 		}
 		else if ( X == 0 && Y == 0 ){
 			System.out.println("The angle is undefined");
-			System.out.println("The distance from the origin is " + r );
+			System.out.println();
+			System.out.printf("The distance from the origin is %1.2f" ,r );
 		}
-	
-		System.out.println("Did you want me to try a differnet set?");	//repeat loop?
+		
+		System.out.println();
+		System.out.println("Did you want me to try a differnet set?(Y/N)");	//repeat loop?
 		again = TextIO.getlnBoolean();
 	}
 	while ( again != false );	
@@ -76,5 +83,3 @@ public class CodeChallengeCartesianToPolar {
 	}	//end of main
 
 }	//end of class
-
-
