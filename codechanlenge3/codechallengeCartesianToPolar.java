@@ -1,6 +1,11 @@
+/**
+*Using scanner for cartesian coordinates
+*and convert it into corresponding polar coordinates
+* Coded By Reagan Stovall and Yiran Guo
+*/
 import java.util.Scanner;	// Scanner is a java utility that scans for user keyboard input.
 
-public class CodeChallengeXY {
+public class CodeChallengeCartesianToPolar {
 
 	public static void main(String[] args) {
 
