@@ -6,31 +6,31 @@
 public class CodeChallengeCartesianToPolar {
 
 	public static void main(String[] args) {
-		//get and define X and Y//
+	
 		boolean again;	//Loop value
-		double X;		//X value
-		double Y;		//Y value
-		double r;		//distance from the origin to the given point
+		double X;	//X value
+		double Y;	//Y value
+		double r;	//distance from the origin to the given point
 		double angle1;	//Theta for positive Y
 		double angle2;	//Theta for negative Y
 		double angle3;	//Theta for when both are negative
 		
-	System.out.println("This is a program using polar coordinates to find the");
+	System.out.println("This is a program using cartesian coordinates to find the");
 	System.out.println("distance from the origin as well as the angle with");	
 	System.out.println("respect to the positive x-axis");
 	
-	do {
+	do {		//get and define X and Y
 		System.out.println("what is your X value?");
 			X = TextIO.getlnDouble();
 		System.out.println("what is your Y value?");
 			Y = TextIO.getlnDouble();
 		
-		//defining the variables
+			//defining other variables
 			
 		r = Math.sqrt ( X * X + Y * Y );	//distance from the origin to the point of interest
-		angle1 = Math.atan( Y / X ) * (180 / Math.PI);	//angle from the positive x axis.
+		angle1 = Math.atan( Y / X ) * (180 / Math.PI);		//angle from the positive x axis.
 		angle2 = Math.atan( Y / X ) * (180 / Math.PI) + 180;	//angle if y is negative.
-		angle3 = Math.atan( Y / X ) * (180 / Math.PI) + 360;	//angle if y is negative.
+		angle3 = Math.atan( Y / X ) * (180 / Math.PI) + 360;	//angle if both y & x are negative.
 		
 		if ( X > 0 && Y >= 0 ){
 			System.out.println();
