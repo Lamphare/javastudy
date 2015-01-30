@@ -58,7 +58,7 @@ public class CodeChallenge5 {
 		
 		default:
 			System.exit(1);
-		}
+		}	//end of switch
 		System.out.println("");
 		System.out.println("Try another way?");  //looping back to start menu
 		again = TextIO.getlnBoolean();
